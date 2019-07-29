@@ -10,7 +10,7 @@ import java.sql.Timestamp;
 import javax.persistence.*;
 
 @Entity
-//@Audited
+@Audited
 @Table(name="note")
 public class Note {
 
@@ -33,8 +33,10 @@ public class Note {
 
 	@Column(name="modified")
 	@UpdateTimestamp
-
 	private Timestamp modified;
+
+	// version column
+
 
 	// define constructors
 
@@ -102,14 +104,3 @@ public class Note {
 				'}';
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
