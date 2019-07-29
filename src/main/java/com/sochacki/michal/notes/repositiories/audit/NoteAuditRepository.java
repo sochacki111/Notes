@@ -12,12 +12,12 @@ import javax.persistence.PersistenceContext;
 import java.util.List;
 
 @Component
-public class NoteHistoryRepository implements INoteHistoryRepository {
+public class NoteAuditRepository implements INoteAuditRepository {
 
     @PersistenceContext
     private EntityManager entityManager;
 
-    public List<Note> listCustomerRevisions(int noteId) {
+    public List<Note> listNoteRevisions(int noteId) {
 
         // Create Audit Reader
         AuditReader auditReader = AuditReaderFactory.get(entityManager);

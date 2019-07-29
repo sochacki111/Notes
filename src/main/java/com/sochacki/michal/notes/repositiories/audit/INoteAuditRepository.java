@@ -8,8 +8,8 @@ import com.sochacki.michal.notes.entity.Note;
 
 import java.util.List;
 
-public interface INoteHistoryRepository {
+public interface INoteAuditRepository {
 
-    List<Note> listCustomerRevisions(int noteId);
+    List<Note> listNoteRevisions(int noteId);
 
 }
