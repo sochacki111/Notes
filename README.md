@@ -1,4 +1,4 @@
-#Notes - RESTful API webservice for managing notes
+# Notes - RESTful API webservice for managing notes
 #1. Requirements
 - Java 1.8
 - Maven
