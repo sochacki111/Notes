@@ -1,14 +1,14 @@
 # Notes - RESTful API webservice for managing notes
-#1. Requirements
+# 1. Requirements
 - Java 1.8
 - Maven
 - MySQL
 - MySQL Workbench
-#2. Database setup
+# 2. Database setup
 1. Open MySQL Workbench and create user: username=root, password=toor
 2. Create new MySQL Connection: username=root password=toor
 3. Open SQL Script: Point "db/note.sql" file and execute
-#3. Build and run setup
+# 3. Build and run setup
 1. Add JAVA_HOME as system variable
 2. Open your terminal inside project folder and run following command: ```$ mvn spring-boot:run```
 # Example usages:
