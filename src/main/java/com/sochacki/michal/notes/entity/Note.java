@@ -1,12 +1,7 @@
 package com.sochacki.michal.notes.entity;
-
-import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.annotations.UpdateTimestamp;
 import org.hibernate.envers.Audited;
 
 import java.time.LocalDateTime;
-import java.util.Date;
-import java.sql.Timestamp;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -30,16 +25,6 @@ public class Note {
 	@NotNull
 	@Column(name="content")
 	private String content;
-
-	/*
-	@Column(name="created")
-	@CreationTimestamp
-	private Timestamp created;
-
-	@Column(name="modified")
-	@UpdateTimestamp
-	private Timestamp modified;
-	*/
 
 	@Column(name="created")
 	private LocalDateTime created;
